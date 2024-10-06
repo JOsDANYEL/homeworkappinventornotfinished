@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Recuadros Coloridos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos CSS para la página */
+        body {
+            display: flex;
+            justify-content: center; /* Centrar recuadros horizontalmente */
+            align-items: center; /* Centrar recuadros verticalmente */
+            height: 100vh; /* Altura completa de la ventana */
+            margin: 0; /* Eliminar márgenes por defecto */
+            font-family: Arial, sans-serif; /* Tipografía de la página */
+        }
+
+        .contenedor {
+            display: flex; /* Usar flexbox para organizar recuadros grandes */
+            justify-content: center; /* Centrar recuadros grandes */
+            gap: 20px; /* Espacio entre los recuadros grandes */
+        }
+
+        .recuadro {
+            width: 200px; /* Ancho de los recuadros principales */
+            padding: 20px; /* Espacio interno */
+            border: 1px solid #ccc; /* Bordes */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+            display: flex; /* Usar flexbox para organizar recuadros pequeños */
+            flex-direction: column; /* Organizar en columna */
+            align-items: center; /* Centrar contenido de los recuadros */
+        }
+
+        .recuadro-izquierda {
+            background-color: orange; /* Color de fondo naranja */
+        }
+
+        .recuadro-centro {
+            background-color: lightgreen; /* Color de fondo verde claro */
+        }
+
+        .recuadro-derecha {
+            background-color: cyan; /* Color de fondo cian */
+        }
+
+        .recuadro-pequeño {
+            background-color: #ddd; /* Color de fondo de los recuadros pequeños */
+            margin: 5px 0; /* Espacio entre los recuadros pequeños */
+            padding: 10px; /* Espacio interno */
+            border-radius: 5px; /* Bordes redondeados */
+            width: 100%; /* Ancho completo */
+            text-align: center; /* Centrar texto */
+        }
+
+        h2 {
+            text-align: center; /* Centrar títulos */
+            margin: 0 0 10px 0; /* Margen */
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="recuadro recuadro-izquierda">
+            <h2>El Dorado</h2>
+            <div class="recuadro-pequeño">Un hotel de 4 estrellas céntrico, conocido por su elegancia y buen servicio.</div>
+            <div class="recuadro-pequeño">Ofrece desayuno incluido, un gimnasio y está cerca de lugares turísticos importantes.</div>
+            <div class="recuadro-pequeño">Es una excelente opción para viajeros de negocios o placer.</div>
+        </div>
+        <div class="recuadro recuadro-centro">
+            <h2>Oro verde</h2>
+            <div class="recuadro-pequeño">Un hotel 5 estrellas con más de 30 años de historia.</div>
+            <div class="recuadro-pequeño">Famoso por su hospitalidad ecuatoriana y habitaciones modernas con wifi gratuito, restaurantes de cocina internacional, y servicios como masajes y gimnasio.</div>
+            <div class="recuadro-pequeño">Un dato importante a mencionar, es que este lugar es Pet Friendly</div>
+        </div>
+        <div class="recuadro recuadro-derecha">
+            <h2>Four Points By Sheraton</h2>
+            <div class="recuadro-pequeño">Ofrece una experiencia moderna, ubicado junto al Mall del Río.</div>
+            <div class="recuadro-pequeño">Tiene restaurante, gimnasio y habitaciones cómodas.</div>
+            <div class="recuadro-pequeño">Es ideal para estadías relajantes y viajes de negocios.</div>
+        </div>
+    </div>
+</body>
+</html>
